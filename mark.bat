@@ -1,6 +1,7 @@
 cd..
-:: git pull
+git pull
 set da=%date:/=-%
 echo %da:~0,10% : 1 >> Jog-Every-Day\record\%da:~0,7%.txt
-:: git push
-:: pause
+git add record
+git commit -m "%da:~0,10%"
+git push
