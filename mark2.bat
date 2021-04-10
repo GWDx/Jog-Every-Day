@@ -1,5 +1,5 @@
 set valid=%date:~-10%
-set da=%date:/=-%
+set da=%valid:/=-%
 set write=%da:~0,10% : 1
 set file=record\%da:~0,7%.txt
 
